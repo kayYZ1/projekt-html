@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link href="../Styles/Components.css" rel="stylesheet"/>
+    <link href="../Styles/Index.css" rel="stylesheet"/>
+    <link href="../Styles/Login.css" rel="stylesheet"/>
+    <title>Login</title>
+</head>
+<body>
+    <div>
+        <nav class="navigation w-nav"> 
+            <div class="navigation-items">
+                <div class="logo">
+                    
+                </div>
+                <div class="navigation-wrap">
+                    <nav class="navigation-items w-nav-menu">
+                        <a class="navigation-item w-nav-link" href="../Pages/index.html">Home</a>
+                        <a class="navigation-item w-nav-link" href="../Pages/Contact.html">Contact</a>
+                        <a class="navigation-item w-nav-link" href="../Pages/Login.html">Login</a>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <h1 class="h1-big-text">Login</h1>
+            <div className="paragraph-big paragraph-bigger-light" style="margin-bottom: 20px">
+                Zaloguj się na stronę.
+            </div>
+            <form class="login-form">
+                <input type="text" name="username" id="username_input"
+                class="login-form-input" placeholder="Username..." required>
+                <input type="password" name="password" id="password_input"
+                class="login-form-input" placeholder="Password..." required>
+                <input type="submit" class="login-form-submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
