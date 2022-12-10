@@ -8,7 +8,8 @@
     <link href="../Styles/Components.css" rel="stylesheet"/>
     <link href="../Styles/Index.css" rel="stylesheet"/>
     <link href="../Styles/Login.css" rel="stylesheet"/>
-    <title>Login</title>
+    <script defer src="../JS/Validator.js"></script>
+    <title>Register</title>
 </head>
 <body>
     <div>
@@ -27,20 +28,20 @@
             </div>
         </nav>
         <div class="container">
-            <h1 class="h1-big-text">Login</h1>
+            <h1 class="h1-big-text">Rejestracja</h1>
             <div className="paragraph-big paragraph-bigger-light" style="margin-bottom: 20px">
-                Zaloguj się na stronę.
+                Zarejestruj się na stronę.
             </div>
-            <form class="login-form">
-                <input type="text" name="username" id="username_input"
-                class="login-form-input" placeholder="Username..." required>
-                <input type="password" name="password" id="password_input"
+            <form class="login-form" id="form" action="/Pages/Login.html" method="GET">
+                <input type="email" name="email" id="email"
+                class="login-form-input" placeholder="Email..." required>
+                <input type="password" name="password" id="password"
                 class="login-form-input" placeholder="Password..." required>
-                <input type="submit" class="login-form-submit" value="Login">
+                <input type="password" name="password-repeat" id="repeatPassword"
+                class="login-form-input" placeholder="Repeat password..." required>
+                <button type="submit" class="login-form-submit">Register</button>
             </form>
-            <div className="paragraph-big paragraph-bigger-light" style="margin-top:20px">
-                <a href="./Register.html" style="text-decoration: none;">Nie masz konta? Zarejestruj się.</a>
-            </div>
+            <div id="show-error">No validation error yet!</div>
         </div>
     </div>
 </body>
