@@ -1,0 +1,14 @@
+$(document).ready(function(){
+    $("#HomePage").click(function(){
+        $("body").load("../index.html")
+    })
+    $("#ContactPage").click(function(){
+        $("body").load("/Pages/Contact.html")
+    })
+    $("#LoginPage").click(function(){
+        $("body").load("/Pages/Login.html")
+    })
+    $("#RegisterPage").click(function(){
+        $("body").load("/Pages/Register.html")
+    })
+})

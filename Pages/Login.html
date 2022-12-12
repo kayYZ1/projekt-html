@@ -8,6 +8,8 @@
     <link href="../Styles/Components.css" rel="stylesheet"/>
     <link href="../Styles/Index.css" rel="stylesheet"/>
     <link href="../Styles/Login.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../JS/DynamicPages.js"></script>
     <title>Login</title>
 </head>
 <body>
@@ -19,9 +21,9 @@
                 </div>
                 <div class="navigation-wrap">
                     <nav class="navigation-items w-nav-menu">
-                        <a class="navigation-item w-nav-link" href="../index.html">Home</a>
-                        <a class="navigation-item w-nav-link" href="./Contact.html">Contact</a>
-                        <a class="navigation-item w-nav-link" href="./Login.html">Login</a>
+                        <a class="navigation-item w-nav-link" id="HomePage">Home</a>
+                        <a class="navigation-item w-nav-link" id="ContactPage">Contact</a>
+                        <a class="navigation-item w-nav-link" id="LoginPage">Login</a>
                     </nav>
                 </div>
             </div>
@@ -39,7 +41,7 @@
                 <input type="submit" class="login-form-submit" value="Login">
             </form>
             <div className="paragraph-big paragraph-bigger-light" style="margin-top:20px">
-                <a href="./Register.html" style="text-decoration: none;">Nie masz konta? Zarejestruj się.</a>
+                <a id="RegisterPage" style="text-decoration: none;">Nie masz konta? Zarejestruj się.</a>
             </div>
         </div>
     </div>
