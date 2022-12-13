@@ -7,6 +7,12 @@ const repeatPassword = document.querySelector("#repeatPassword")
 form.addEventListener("submit", (error) => {
     let incorrectValues = ""
 
+    const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
+    const emailValid = regex.test(email.value);
+    if (!emailValid){
+        incorrectValues += "Entered email must be valid. \n";
+    }
+
     const passwordIncludesDigit = /\d/.test(password.value);
     if (!passwordIncludesDigit) {
         incorrectValues += "Password must include at least one digit. \n"

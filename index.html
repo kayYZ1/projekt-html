@@ -7,19 +7,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
     <link href="../Styles/Components.css" rel="stylesheet"/>
     <link href="../Styles/Index.css" rel="stylesheet"/>
-    <title>Strona</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>NetCourse</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="./JS/DynamicPages.js"></script>
+    <script src="./JS/ColorChange.js"></script>
 </head>
 <body>
     <div>
         <nav class="navigation w-nav"> 
             <div class="navigation-items">
                 <div class="logo">
-                    
+                    <button id="colorChangeBtn">
+                        <i class="fa-solid fa-circle-half-stroke"></i>
+                    </button>
                 </div>
                 <div class="navigation-wrap">
-                    <nav class="navigation-items w-nav-menu">
+                    <nav class="navigation-items w-nav-menu" id="navbar">
                         <a class="navigation-item w-nav-link" id="HomePage">Home</a>
                         <a class="navigation-item w-nav-link" id="ContactPage">Contact</a>
                         <a class="navigation-item w-nav-link" id="LoginPage">Login</a>

@@ -204,3 +204,8 @@ a {
     text-align: center;
     padding-top: 50px;
 }
+
+.dark {
+    background-color: #1a1b1f;
+    color: #e4e4e4;
+}
