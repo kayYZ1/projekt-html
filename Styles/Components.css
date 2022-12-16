@@ -37,7 +37,6 @@
     display: inline-block;
     vertical-align: top;
     text-decoration: none;
-    color: #222222;
     padding: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -47,7 +46,6 @@
 }
 a {
     display: block;
-    color: #43464d;
     text-decoration: underline;
 }
 .section-header {
@@ -205,7 +203,11 @@ a {
     padding-top: 50px;
 }
 
-.dark {
+.night-mode {
     background-color: #1a1b1f;
-    color: #e4e4e4;
+    color: white;
+}
+.light-mode: {
+    background-color: white;
+    color: #1a1b1f;
 }
